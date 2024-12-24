@@ -1,0 +1,13 @@
+#business-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px; /* Adjust spacing between cards */
+    padding: 16px;
+}
+
+.business-card {
+    flex: 1 1 calc(33.333% - 16px); /* Three items per row */
+    max-width: calc(33.333% - 16px); /* Ensure proper width */
+    box-sizing: border-box;
+}

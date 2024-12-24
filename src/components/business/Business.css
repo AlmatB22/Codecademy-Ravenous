@@ -1,0 +1,53 @@
+.business-card {
+    width: 200px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.business-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.business-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.infoblock {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.address, .info {
+    text-align: left;
+}
+
+.address p, .info p {
+    margin: 4px 0;
+}
+
+.category {
+    color: #D4A373; /* Gold tone */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rating {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.reviews {
+    color: #999;
+    font-size: 0.9rem;
+}

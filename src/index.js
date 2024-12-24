@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Business from './components/business/Business';
+import BusinessList from './components/businessList/BusinessList'
+import SearchBar from './components/SearchBar/searchBar';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <SearchBar />
+    <BusinessList />
   </React.StrictMode>
 );
 
