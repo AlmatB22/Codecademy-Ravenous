@@ -13,26 +13,26 @@ const b = {
     };
     
 
-    function Business() {
-        return (
-            <div className="business-card">
-                <img className="business-image" alt="business" src={b.image} />
-                <p className="business-name">{b.name}</p>
-                <div className="infoblock">
-                    <div className="address">
-                        <p>{b.address}</p>
-                        <p>{b.city}</p>
-                        <p>{b.zipcode}</p>
-                    </div>
-                    <div className="info">
-                        <p className="category">{b.category}</p>
-                        <p className="rating">{b.rating} stars</p>
-                        <p className="reviews">{b.review_count} reviews</p>
-                    </div>
+function Business(props) {
+    return (
+        <div className="business-card">
+            <img className="business-image" alt="business" src={props.b.image} />
+            <p className="business-name">{props.b.name}</p>
+            <div className="infoblock">
+                <div className="address">
+                    <p>{props.b.address}</p>
+                    <p>{props.b.city}</p>
+                    <p>{props.b.zipcode}</p>
+                </div>
+                <div className="info">
+                    <p className="category">{props.b.category}</p>
+                    <p className="rating">{props.b.rating} stars</p>
+                    <p className="reviews">{props.b.review_count} reviews</p>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
+}
     
 
 export default Business;
