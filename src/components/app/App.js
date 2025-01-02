@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
 import SearchBar from '../SearchBar/searchBar';
@@ -40,12 +40,26 @@ const b_array = [
   }
 ];
 function App() {
+  const [filter, setFilter] = useState('BestMatch');
+  const changeFilter = (param) => {
+    setFilter(param);
+  }
+
+  const [business, setBusiness] = useState('');
+  const changeBusiness = (param) => {
+    setBusiness(param);
+  }
+
+  const [location, setLocation] = useState('');
+  const changeLocation = (param) => {
+    setLocation(param);
+  }
   return (
     <div className="App">
       <header>
         <h1 id='header-title'>Ravenous</h1>
       </header>
-        <SearchBar />
+        <SearchBar onChangeFilter={changeFilter} onChangeBusiness={changeBusiness} onChangeLocation={changeLocation} filter={filter} business={business} location={location}/>
         <BusinessList array={b_array}/>
     </div>
   );
